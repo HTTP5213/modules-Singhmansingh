@@ -1,4 +1,4 @@
-var HobbitSettlement = class {
+export var HobbitSettlement = class {
 	constructor(name, founding, founders) {
 		this.name = name;
 		this.founding = founding;
@@ -7,11 +7,5 @@ var HobbitSettlement = class {
 	}
 };
 
-var theShire = new HobbitSettlement('The Shire', 1601, ['Marcho', 'Blanco']);
-var buckland = new HobbitSettlement('Buckland', 2340, 'Gorhendad Oldbuck');
-
-module.exports = {
-    HobbitSettlement,
-    theShire,
-    buckland
-}
+export var theShire = new HobbitSettlement('The Shire', 1601, ['Marcho', 'Blanco']);
+export var buckland = new HobbitSettlement('Buckland', 2340, 'Gorhendad Oldbuck');
