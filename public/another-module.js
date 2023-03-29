@@ -1,4 +1,4 @@
-export var HobbitSettlement = class {
+const HobbitSettlement = class {
 	constructor(name, founding, founders) {
 		this.name = name;
 		this.founding = founding;
@@ -7,5 +7,7 @@ export var HobbitSettlement = class {
 	}
 };
 
-export var theShire = new HobbitSettlement('The Shire', 1601, ['Marcho', 'Blanco']);
-export var buckland = new HobbitSettlement('Buckland', 2340, 'Gorhendad Oldbuck');
+let theShire = new HobbitSettlement('The Shire', 1601, ['Marcho', 'Blanco']);
+let buckland = new HobbitSettlement('Buckland', 2340, 'Gorhendad Oldbuck');
+
+export { HobbitSettlement, theShire, buckland }
